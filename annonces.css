@@ -1,0 +1,142 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f7;
+    line-height: 1.6;
+}
+
+header {
+    background-color: hsl(130, 60%, 2%);;;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.annonces-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.annonce-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.annonce-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.annonce-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.annonce-titre {
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.annonce-prix {
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(130, 60%, 2%);;
+    margin-bottom: 10px;
+}
+
+.annonce-description {
+    color: #666;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.annonce-details {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 14px;
+}
+
+.annonce-categorie {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.annonce-telephone {
+    color: hsl(130, 60%, 2%);;
+    font-weight: bold;
+}
+
+.no-annonces {
+    text-align: center;
+    color: #666;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .annonce-card {
+        flex-direction: column;
+    }
+
+    .annonce-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .annonce-content {
+        padding: 15px;
+    }
+
+    .annonce-titre {
+        font-size: 18px;
+    }
+
+    .annonce-prix {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .annonces-container {
+        padding: 0 10px;
+    }
+
+    .annonce-image {
+        height: 150px;
+    }
+}
